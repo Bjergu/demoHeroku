@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: rgb(221, 90, 34);
+            background: linear-gradient(0deg, rgba(221, 90, 34, 1) 0%, rgba(214, 69, 207, 1) 17%, rgba(83, 84, 222, 0.8970938717283788) 33%, rgba(30, 230, 22, 0.8074580173866421) 53%, rgba(232, 240, 20, 1) 69%, rgba(236, 19, 19, 0.9251050762101716) 100%);
+        }
+
+        #top{
+            height: 165px;
+            width: 1200px;
+            margin-left: 10%;
+            margin-top: -20px;
+        }
+        #wrapper{
+            height: 600px;
+            width: 1200px;
+            margin-left: 10%;
+            border: 1px solid black;
+        }
+        #data{
+            height: 115px;
+            width: 150px;
+            margin: 20px;
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div id="top"><img src="images/SpringExerciseHeader2.png"></div>
+    <div id="wrapper">
+        <div id="data">
+            <div style="font-size: 20;"><b>Owners name:</b></div>
+            <span th:text="${Claus.first_name}"/>
+            <div><b>Pets name:</b></div>
+            <span th:text="${Claus.last_name}"/>
+            <div><b>Species:</b></div>
+            <span th:text="${Claus.species}"/>
+        </div>
+    </div>
+
+</body>
+</html>
